@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - EduMate</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Quiz</h1>
+    <a href="home.html">⬅ Kembali</a>
+    <button id="btnLogout" class="logout-btn">Logout</button>
+  </header>
+
+  <!-- Setup -->
+  <section id="quizSetup">
+    <h2>Pilih Kategori (boleh ketik bebas)</h2>
+    <input id="quizCategory" placeholder="Contoh: matematika, trigonometri, world history...">
+    <p>Jumlah soal:</p>
+    <input id="quizTotal" type="number" value="15" min="5" max="50">	
+    <button id="startQuiz">Mulai</button>
+    <p id="quizSetupMsg" class="muted"></p>
+  </section>
+
+  <!-- Game -->
+  <section id="quizGame" class="hidden">
+    <h2 id="quizQuestion"></h2>
+    <div id="quizOptions" class="quiz-options"></div>
+    <p id="quizProgress"></p>
+    <button id="btnNext" class="hidden">Lanjut</button>
+  </section>
+
+  <!-- Result -->
+  <section id="quizResult" class="hidden"></section>
+</body>
+</html>
+

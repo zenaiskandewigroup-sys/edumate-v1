@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduMate</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script>
+    // Splash → redirect otomatis setelah 2 detik
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        window.location.href = "login.html"; // ganti ke home.html kalau mau langsung dashboard
+      }, 2000);
+    });
+  </script>
+</head>
+<body class="splash">
+  <div class="splash-container">
+    <h1 class="logo">EduMate</h1>
+    <p class="loading">Loading...</p>
+  </div>
+</body>
+</html>
+
+
